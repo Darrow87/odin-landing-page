@@ -7,7 +7,7 @@ body {
 .section-1 {
     background-color: #1f2937;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .content-1-left {
@@ -19,12 +19,15 @@ body {
 }
 
 .content-1-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-1-right-image {
     border: 1px;
     border-style: solid;
     border-color: red;
-    /* margin: 10px; */
-    /* padding-right: 55px;
-    flex-shrink: 0; */
+    padding: 20px;
 }
 
 .subcontent-1-left {
@@ -32,17 +35,17 @@ body {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
     background-color: #1f2937;
     font-size: 24px;
     /* padding-left: 45px; */
 }
 
 .header-links {
-    display: flex;
-    gap: 5px;
-    padding-right: 55px;
+    align-self: flex-end;
+}
+
+.header, .header-links {
+    margin-bottom: 55px;
 }
 
 a {
