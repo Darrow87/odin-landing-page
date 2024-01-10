@@ -2,6 +2,9 @@ body {
     display: flex;
     flex-direction: column;
     color: red;
+    height: 100vh;
+    margin: 0;ß
+    
 }
 
 .section-1 {
@@ -88,9 +91,61 @@ a {
 /* section 3 */
 
 .section-3 {
-    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Adjust the color to match your design */
+    padding: 50px 20px;
+
+}
+
+.quote-container {
+    max-width: 600px; /* Adjust the width as necessary */
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 1.25em; /* Adjust the size as necessary */
+    color: #333; /* Adjust the color to match your design */
+    margin-bottom: 20px;
+}
+
+.quote-author {
+    font-size: 1em; /* Adjust the size as necessary */
+    color: #666; /* Adjust the color to match your design */
+    font-style: italic;
+    text-align: right;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-4-container {
+    border: 2px;
+    border-style: solid;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 10px;
+    margin: 40px
 }
 
 .footer {
+    display: flex;
     background-color: #1f2937;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-1, .section-2, .section-3, .section-4 {
+    flex: 1
 }
